@@ -1,54 +1,30 @@
-/* Global Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
-:root {
-    --primary-blue: #0056b3;
-    --secondary-green: #28a745;
-    --light-bg: #f4f7f6;
-    --dark-text: #333;
-}
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: var(--dark-text);
-    background-color: var(--light-bg);
-}
 
-/* Navbar Style */
-.navbar {
-    background-color: var(--primary-blue);
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
 
-.nav-links {
-    display: flex;
+.doctor-list {
     list-style: none;
-    gap: 20px;
+    padding-left: 0;
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+.doctor-card {
+    background: white;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+    text-align: left;
 }
 
-/* Section Spacing */
-.section {
-    padding: 80px 10%;
-    min-height: 400px;
-    text-align: center;
+.doctor-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 14px;
+    margin-bottom: 16px;
 }
 
 .container {
@@ -58,13 +34,7 @@ body {
     
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    
-}
+
 .right {
 
 float: right;
@@ -77,6 +47,16 @@ width: 35%;
 width: 100%;
 padding: 15px;
 margin-left: 6px;
+.doctor-card h3 {
+    margin-bottom: 12px;
+    color: #0056b3;
+}
+
+.doctor-card h5 {
+    margin-top: 4px;
+    margin-bottom: 16px;
+    color: #6c757d;
+    font-weight: 700;
 }
 .left{
 float: left;
@@ -100,4 +80,12 @@ color: white;
 */
 
 
+#doctors {
+    background-color: #e8f1ff;
+}
 
+#doctors h2 {
+    font-size: 40px;
+    color: 0056b3;
+    margin-bottom: 28px;
+}
